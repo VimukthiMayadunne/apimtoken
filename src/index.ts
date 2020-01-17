@@ -7,7 +7,7 @@ const apiToken = require('./apiToken');
 
 
 class Apimtoken extends Command {
-  static description = 'describe the command here'
+  static description = 'Single line CLI to get an accses token from Wso2-API_M'
 
   static flags = {
     // add --version flag to show CLI version

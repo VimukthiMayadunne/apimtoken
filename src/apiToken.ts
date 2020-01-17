@@ -9,7 +9,9 @@ async function sendRequest(data:any){
         request(data,async function (error: string | undefined, response: any, body: any) {
             if (error){
                 reject(error)
+                console.log(body)
             }
+            console.log(body)
             resolve(body);
           });
         }
@@ -28,7 +30,7 @@ async function getCredintials(uri:string,username:string,password:string,scopes:
     headers: 
     {
         Connection: 'keep-alive',
-        Host: 'localhost:9763',
+        Host: 'localhost:9443',
         Accept: '*/*',
         'Content-Type': 'application/json',
         Authorization: baseAuth },

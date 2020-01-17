@@ -22,7 +22,7 @@ $ apimtoken (-v|--version|version)
 apimtoken/0.0.0 linux-x64 node-v10.16.3
 $ apimtoken --help [COMMAND]
 USAGE
-  $ apimtoken COMMAND
+  $ apimtoken -n=${user name} -p=${password} -s=${scopes} -u=${url of the APIM}
 ...
 ```
 <!-- usagestop -->
