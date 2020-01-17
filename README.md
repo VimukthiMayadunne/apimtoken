@@ -9,24 +9,39 @@ single line API to get an accses token from API_M
 [![License](https://img.shields.io/npm/l/apimtoken.svg)](https://github.com/VimukthiMayadunne/apimtoken/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+* [Pre-requisite ](#Pre-requisite)
+* [Installation](#Installation)
+* [Runnig the Cli-Tool](#Runnig the Cli-Too)
 <!-- tocstop -->
-# Usage
-<!-- usage -->
-```sh-session
-$ npm install -g apimtoken
-$ apimtoken COMMAND
-running command...
-$ apimtoken (-v|--version|version)
-apimtoken/0.0.0 linux-x64 node-v10.16.3
-$ apimtoken --help [COMMAND]
-USAGE
-  $ apimtoken -n=${user name} -p=${password} -s=${scopes} -u=${url of the APIM}
-...
-```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
 
-<!-- commandsstop -->
+
+# Pre-requisite 
+- node.js
+- wso2-APIM 3.0.0 +
+
+
+
+# Installation
+You can install `apimtoken` either through `npm` or by cloning the code from this GitHub repo.  This README covers the installation steps with `npm`.
+
+
+1) Run the following command  in the terminal 
+
+```bash
+$ npm install -g oastokong
+```
+
+         
+# Runnig the Cli-Tool
+
+Make sure Wso2 API manager is up and running 
+
+Then run the following command to retrive an accsess token 
+
+#### Example
+
+```bash
+$ apimtoken -s={scopes} -n={username} -p={password} -u=https://10.100.5.244:9443 
+```
+
+Credits - oclif framework  https://oclif.io
