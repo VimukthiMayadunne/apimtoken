@@ -28,7 +28,7 @@ You can install `apimtoken` either through `npm` or by cloning the code from thi
 1) Run the following command  in the terminal 
 
 ```bash
-$ npm install -g oastokong
+$ npm install -g apimtoken
 ```
 
          
