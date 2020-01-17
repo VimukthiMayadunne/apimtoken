@@ -9,9 +9,9 @@ single line API to get an accses token from API_M
 [![License](https://img.shields.io/npm/l/apimtoken.svg)](https://github.com/VimukthiMayadunne/apimtoken/blob/master/package.json)
 
 <!-- toc -->
-* [Pre-requisite ](#Pre-requisite)
-* [Installation](#Installation)
-* [Runnig the Cli-Tool](#Runnig the Cli-Too)
+* [Pre-requisite](#pre-requisite)
+* [Installation](#installation)
+* [Runnig the Cli-Tool](#runnig-the-cli-tool)
 <!-- tocstop -->
 
 
