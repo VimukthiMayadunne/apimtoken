@@ -35,7 +35,7 @@ async function getCredintials(uri:string,username:string,password:string,scopes:
     body: 
     {   callbackUrl: 'www.google.lk',
         clientName: 'rest_api_publisher',
-        owner: 'admin',
+        owner: username,
         grantType: 'password refresh_token',
         saasApp: true },
     json: true };
