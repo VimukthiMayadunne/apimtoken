@@ -40,10 +40,12 @@ Then run the following command to retrive an accsess token
 
 If you are using a version below 3.1 please metion the version under flag ex- -a=2.7
 
+Run `apimtoken -h` for help
+
 #### Example
 
 ```bash
-$ apimtoken -s={scopes} -n={username} -p={password} -u=https://10.100.5.244:9443 -a=3.1
+$ apimtoken -s={scopes} -n={username} -p={password} -u=https://10.100.5.244:9443 -a={apim Version}
 ```
 
 Credits - oclif framework  https://oclif.io
