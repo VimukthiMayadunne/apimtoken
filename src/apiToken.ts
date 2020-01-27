@@ -20,11 +20,10 @@ async function sendRequest(data:any){
     })
 }
 
-async function getCredintials(uri:string,username:string,password:string,scopes:string){
-
+async function getCredintials(uri:string,username:string,password:string,scopes:string,apiVersion:string){
     let baseAuth = await decode(username,password)
     let options = { method: 'POST',
-    url: uri+'/client-registration/v0.15/register',
+    url: uri+'/client-registration/'+apiVersion+'/register',
     headers: 
     {
         Connection: 'keep-alive',
@@ -48,6 +47,7 @@ async function getCredintials(uri:string,username:string,password:string,scopes:
         }
         catch(err){
             console.error(err)
+            reject(err)
         }
     })
 }

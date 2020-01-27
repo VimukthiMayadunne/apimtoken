@@ -3,6 +3,7 @@ import {Command, flags} from '@oclif/command'
 
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0";
 const apiToken = require('./apiToken');
+const getVersion = require('./getVersion');
 
 
 
@@ -18,6 +19,7 @@ class Apimtoken extends Command {
     uri: flags.string ({char: 'u', description: 'URL for the wso2 API-M'}),
     username: flags.string ({char: 'n', description: 'User Name'}),
     password: flags.string ({char: 'p', description: 'Password'}),
+    apimversion: flags.string({char: 'a', description: 'API-M Version'})
   }
   static args = [{name: 'file'}]
 
@@ -27,7 +29,9 @@ class Apimtoken extends Command {
     const uri = flags.uri || 'https://localhost:9443'
     const userName = flags.username 
     const password = flags.password 
-    var rslt=await apiToken.getCredintials(uri,userName,password,scopes);
+    const apimV = flags.apimversion || '3.1'
+    const apimVersion=await getVersion.getVersionNumber(parseFloat(apimV));
+    var rslt=await apiToken.getCredintials(uri,userName,password,scopes,'v0.16');
     var key = 'Bearer '+await rslt
     console.log(key)
   }
