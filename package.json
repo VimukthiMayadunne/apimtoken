@@ -1,7 +1,7 @@
 {
   "name": "apimtoken",
   "description": "single line CLI to get an accses token from Wso2-API_M",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Vimukthi Mayadunne @VimukthiMayadunne",
   "bin": {
     "apimtoken": "./bin/run"
