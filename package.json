@@ -39,7 +39,7 @@
   ],
   "homepage": "https://github.com/VimukthiMayadunne/apimtoken",
   "keywords": [
-    "oclif"
+    "oclif","wso2","API","API-Manager","APIM","cli"
   ],
   "license": "MIT",
   "main": "lib/index.js",
