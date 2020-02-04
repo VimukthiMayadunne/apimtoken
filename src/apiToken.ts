@@ -35,7 +35,6 @@ async function getCredintials(
     url: uri + "/client-registration/" + apiVersion + "/register",
     headers: {
       Connection: "keep-alive",
-      Host: "localhost:9443",
       Accept: "*/*",
       "Content-Type": "application/json",
       Authorization: baseAuth
@@ -87,7 +86,6 @@ async function getToken(
     headers: {
       Connection: "keep-alive",
       "Content-Type": "application/x-www-form-urlencoded",
-      Host: "localhost:8243",
       Accept: "application/json",
       Authorization: Auth
     },
