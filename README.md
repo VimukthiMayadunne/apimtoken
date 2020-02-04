@@ -12,6 +12,7 @@ single line API to get an accses token from API_M
 * [Pre-requisite](#pre-requisite)
 * [Installation](#installation)
 * [Runnig the Cli-Tool](#runnig-the-cli-tool)
+* [Development Guide](#development-guide)
 <!-- tocstop -->
 
 
@@ -45,7 +46,18 @@ Run `apimtoken -h` for help
 #### Example
 
 ```bash
-$ apimtoken -s={scopes} -n={username} -p={password} -u=https://10.100.5.244:9443 -a={apim Version}
+
+$ apimtoken -s={ scopes } -n={ username } -p={ password } -u={ URL } -a={ apim Version }
+
+$ apimtoken -s=apim:apim_create -n=admin -p=admin -u=https://10.100.5.244:9443 -a=3.1 
+
 ```
+
+# Development Guide
+
+Clone or download the repository
+
+Run npm install to install all the required dependencies 
+
 
 Credits - oclif framework  https://oclif.io
